@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btnMain" layoutX="377.0" layoutY="214.0" mnemonicParsing="false" onAction="#onBtnAction" text="Oblicz" />
+      <TextField fx:id="textLicznik" layoutX="91.0" layoutY="72.0" promptText="Wysokosc" />
+      <TextField fx:id="textLicznik1" layoutX="91.0" layoutY="112.0" promptText="Promien" />
+      <TextField fx:id="textLicznik2" layoutX="91.0" layoutY="153.0" promptText="Grubosc blachy" />
+      <Label fx:id="waga" layoutX="377.0" layoutY="72.0" prefHeight="18.0" prefWidth="202.0" text="Waga" />
+      <Label fx:id="cena" layoutX="377.0" layoutY="102.0" prefHeight="18.0" prefWidth="201.0" text="Cena" />
+      <Label layoutX="70.0" layoutY="72.0" text="cm" />
+      <Label layoutX="70.0" layoutY="116.0" text="cm" />
+      <Label layoutX="67.0" layoutY="157.0" text="cm" />
+      <Label layoutX="342.0" layoutY="72.0" text="kg" />
+      <Label layoutX="323.0" layoutY="103.0" text="zlotych" />
+      <RadioButton fx:id="stalZw" layoutX="318.0" layoutY="129.0" mnemonicParsing="false" selected="true" text="Stal zwykla">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="stalNierdz" layoutX="318.0" layoutY="148.0" mnemonicParsing="false" text="Stal nierdzewna" toggleGroup="$toggleGroup" />
+   </children>
+</AnchorPane>
